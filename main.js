@@ -8,6 +8,6 @@ const hideSuccessfulActions = function(){
     });
   }
 }
-if ( window.location.href.match( /https?:\/\/github\.com\/\w+\/\w+\/pull\/\d+/) ) {
+if ( window.location.href.match( /https?:\/\/github\.com\/(\w+-?_?)+\/(\w+-?_?)+\/pull\/\d+/)[0] ) {
   window.setInterval(hideSuccessfulActions, 100);
 }
