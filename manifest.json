@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2, 
+  "name": "Github Success Action Dismissal", 
+  "version": "0.1", 
+  "description": "Hides successful actions from PR", 
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"], 
+      "js": ["main.js"]
+    }
+  ]
+}
